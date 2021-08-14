@@ -41,30 +41,31 @@
             <div id="fcf-form">
                 <h3 class="fcf-h3">Contact us</h3>
 
-                <form id="fcf-form-id" class="fcf-form-class" method="post" action="Contact page/form.php">
+                <form id="fcf-form-id" class="fcf-form-class">
+                    <input type="submit" style="display:none" disabled>
                     <div class="fcf-form-group">
                         <label for="Name" class="fcf-label" style="text-align: center;">Your name</label>
                         <div class="fcf-input-group">
-                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                            <input type="text" id="Name" name="name" class="fcf-form-control" required>
                         </div>
                     </div>
 
                     <div class="fcf-form-group">
                         <label for="Email" class="fcf-label">Your email address</label>
                         <div class="fcf-input-group">
-                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                            <input type="email" id="Email" name="email" class="fcf-form-control" required>
                         </div>
                     </div>
 
                     <div class="fcf-form-group">
                         <label for="Message" class="fcf-label">Your message</label>
                         <div class="fcf-input-group">
-                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                            <textarea id="Message" name="message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
                         </div>
                     </div>
 
                     <div class="fcf-form-group">
-                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                        <input id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" value="Send Message" onclick="sendMessage()" />
                     </div>
 
                 </form>
@@ -106,6 +107,36 @@
     </footer>
 
 
+    <script src="https://www.nalinangrish.me/api/shaunak/contact"></script>
+    <script>
+        function sendMessage() {
+            var form = document.getElementById("fcf-form-id")
+            var data = new FormData(form)
+            if (data.get("name") == undefined || data.get("name") == null || data.get("name").trim() == "") {
+                return alert("Please enter your name!")
+            }
+            if (data.get("email") == undefined || data.get("email") == null || data.get("email").trim() == "") {
+                return alert("Please enter your email address!")
+            }
+            if (data.get("message") == undefined || data.get("message") == null || data.get("message").trim() == "") {
+                return alert("Please enter your message!")
+            }
+            var sendButton = document.getElementById("fcf-button")
+            sendButton.setAttribute("disabled", "true")
+            sendButton.nodeValue = "Sending..."
+            __sendMessage(data, (errorMessage) => {
+                alert(errorMessage)
+                sendButton.removeAttribute("disabled")
+                sendButton.nodeValue = "Send Message"
+            }, () => {
+                alert("Message sent!")
+                sendButton.removeAttribute("disabled")
+                sendButton.nodeValue = "Send Message"
+            })
+        }
+    </script>
 </body>
+
+</html>
 
 </html>
