@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contacts | Shaunak Guchhait</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contactpage/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" type="image/png" href="faviicon.ico">
+
+</head>
+
+<body>
+
+    <!----Navigation Control
+    ===================================-->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+        <label class="logo">SHAUNAK GUCHHAIT</label>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a class="active" href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+            <li><a href="https://snakegamesg.netlify.app/" target="_blank">🎮 Snake Game</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!--------E-mail Form
+    =================================-->
+    <div class="form-container">
+
+
+        <div class="fcf-body">
+
+            <div id="fcf-form">
+                <h3 class="fcf-h3">Contact us</h3>
+
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="Contact page/form.php">
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label" style="text-align: center;">Your name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Your email address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!----Footer
+    =========================-->
+    <footer>
+
+
+
+        <div class="center box">
+            <br>
+            <h2><u>CATCH UP ON THE WEB</u></h2>
+            <div class="social-footer-icons">
+                <br>
+
+                <a href="https://github.com/Shaunak0806"><img src="img/github.png" class="icon"></a> &nbsp;
+                <a href="https://www.instagram.com/shaunak.08s/?hl=en"><img src="img/instagram.png" alt="Instagram Logo" class="icon"></a> &nbsp;
+                <a href="https://www.quora.com/profile/Shaunak-Guchhait"><img src="img/quora.png" class="icon"></a> &nbsp;
+                <a href="https://www.youtube.com/channel/UCMHEDnlJDpMASoAXEbnfvpg"><img src="img/youtube.png" class="icon"></a> &nbsp;
+                <a href="https://www.patreon.com/user/creators?u=58475791"><img src="img/Patreon.png" class="icon"></a> &nbsp;
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+
+        <div class="bottom ">
+            <center>
+                <span class="credit ">Created By <a href="index.html">Shaunak Guchhait</a> | </span>
+                <span>© 2020 All rights reserved.</span>
+            </center>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
