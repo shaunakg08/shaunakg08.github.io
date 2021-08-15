@@ -1558,7 +1558,7 @@ footer {
 
 @media (max-width: 991px) {
     body.nav-active .curent-page-name-shadow {
-        display: none;
+        margin-top: -10px;
     }
     .swiper-slide {
         width: 50%;
@@ -1713,7 +1713,7 @@ footer {
         position: fixed;
         left: 0px;
         padding: 0;
-    }
+    }    
     .footer-text {
         font-size: 10px;
     }
