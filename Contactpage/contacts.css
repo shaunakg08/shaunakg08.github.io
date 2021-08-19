@@ -8,7 +8,7 @@
 
 body {
     font-family: montserrat;
-    background-image: url("bgcontact.gif");
+    background-image: url("bgcontact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -79,8 +79,8 @@ section {
 
 .form-container {
     padding: 25px 10px;
-    margin-left: 600px;
-    margin-right: 80px;
+    margin-left: 380px;
+    margin-right: 340px;
     margin-bottom: 90px;
 }
 
