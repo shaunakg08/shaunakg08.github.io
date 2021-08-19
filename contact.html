@@ -41,13 +41,13 @@
             <div id="fcf-form">
                 <h3 class="fcf-h3" style="text-align: center;"><u>CONTACT US</u></h3>
 
-                <form id="fcf-form-id" class="fcf-form-class" onsubmit="return validateform()" method="post">
+                <form id="fcf-form-id" class="fcf-form-class">
                     <input type="submit" style="display:none" disabled>
                     <div class="fcf-form-group">
                         <div class="fcf-input-group"></div>
 
                         <label for="Name" class="fcf-label" style="text-align: center;"><b>Your Name</b></label>
-                        <input type="text" id="Name" name="name" class="fcf-form-control" required="" placeholder="Name" oninvalid="this.setCustomValidity('Please enter Name')" oninput="setCustomValidity('')" />
+                        <input type="text" id="Name" name="name" class="fcf-form-control" required/>
 
                         <br>
 
@@ -57,11 +57,11 @@
                         <br>
 
                         <label for="Message" class="fcf-label"><b>Your Message</b></label>
-                        <textarea id="Message" name="message" class="fcf-form-control" rows="6" required="" placeholder="Message" oninvalid="this.setCustomValidity('Please enter message')" oninput="setCustomValidity('')" onclick="sendmessage()" /></textarea>
+                        <textarea id="Message" name="message" class="fcf-form-control" rows="6" required="" placeholder="Message" oninvalid="this.setCustomValidity('Please enter message')" oninput="setCustomValidity('')" onclick="sendmessage()"></textarea>
 
                         <br>
 
-                        <button id="sendMessage" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" onclick="sendMessage()">SEND MESSAGE</button>
+                        <input id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" value="Send Message" onclick="sendMessage()" />
                     </div>
 
                 </form>
