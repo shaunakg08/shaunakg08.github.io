@@ -1,7 +1,7 @@
 <h1>Shaunak0806.github.io</h1>
 
 ## About
-This repo contains the source code for my website. Tried doing my best. Thanks a lot to [https://github.com/Nalin-2005]@Nalin-2005 for helping with errors and customisation.
+This repo contains the source code for my website. Tried doing my best. Thanks a lot to [https://github.com/Nalin-2005](@Nalin-2005) for helping with errors and customisation.
 Visit the website at [shaunak0806.github.io](https://shaunak0806.github.io).  
 
 ## Technologies
