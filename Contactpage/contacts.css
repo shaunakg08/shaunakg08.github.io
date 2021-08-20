@@ -8,7 +8,7 @@
 
 body {
     font-family: montserrat;
-    background-image: url("bgcontact.jpg");
+    background-image: url("../img/bgcontact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,6 +17,7 @@ nav {
     background: yellowgreen;
     height: 80px;
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 label.logo {

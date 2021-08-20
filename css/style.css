@@ -467,7 +467,7 @@ mark {
     backface-visibility: hidden;
     -webkit-box-shadow: 0 3px 5px rgba(30, 31, 34, 0.3);
     -moz-box-shadow: 0 3px 5px rgba(28, 28, 29, 0.3);
-    box-shadow: 0 3px 5px rgba(43, 45, 48, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cd-header.is-fixed {
@@ -1713,7 +1713,7 @@ footer {
         position: fixed;
         left: 0px;
         padding: 0;
-    }    
+    }
     .footer-text {
         font-size: 10px;
     }
