@@ -1286,7 +1286,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 
 
-/*--thank you footer-------
+/*--thank you Text-------
 ===================================-->*/
 
 .copyr {
@@ -1316,15 +1316,6 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 .copyr a:hover {
     opacity: 0.5;
-}
-
-.footer a {
-    position: relative;
-    display: inline-block;
-}
-
-.footer-lines {
-    position: relative;
 }
 
 .footer-lines:after,
@@ -1368,7 +1359,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 
 
-/** footer */
+/** Main footer */
 
 footer {
     width: 100%;
