@@ -289,14 +289,11 @@ footer {
     .errorimg {
         height: 200px;
         width: 200px;
-        margin-left: 70px;
-        margin-right: 0px;
+        margin-left: 50px;
+        margin-right: 10px;
     }
     footer {
         bottom: 0px;
-    }
-    .button--mimas {
-        left: 110px;
     }
 }
 
