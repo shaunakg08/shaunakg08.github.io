@@ -32,6 +32,8 @@ label.logo {
 }
 
 nav ul {
+    background-color: #ececec;
+    ;
     float: right;
     margin-right: 20px;
     z-index: 999;
@@ -53,7 +55,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    background-color: #003064;
+    background-color: #0b253f;
     color: white;
     border-radius: 5px;
 }
