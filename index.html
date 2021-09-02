@@ -26,8 +26,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/animsition.min.css" />
-
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Favicons
@@ -51,126 +53,151 @@
         <!-- Nav and Logo
 		================================================== -->
 
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-            <label class="logo">SHAUNAK GUCHHAIT</label>
-            <ul>
-                <li><a class="active" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
-                <li><a href="https://snakegamesg.netlify.app/" target="_blank">🎮 Snake Game</a></li>
-            </ul>
-        </nav>
+        <header class="cd-header">
+            <div class="header-wrapper">
+                <div class="logo-wrap">
+                    <h6 class="fullscreen-image no-blur" style="font-weight: 1000;">SHAUNAK GUCHHAIT</h6>
+                </div>
+                <div class="datetime">
+                    <b> DATE: <span id="datetime"></span>
+
+                    <script>
+                        var dt = new Date();
+                        document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear());
+                    </script>
 
 
-        </b>
-    </div>
+                    &nbsp; TIME: <span id="clock"></span></b>
+                    <script>
+                        var clockElement = document.getElementById("clock");
+
+                        function updateClock(clock) {
+                            clock.innerHTML = new Date().toLocaleTimeString();
+                        }
+
+                        setInterval(function() {
+                            updateClock(clockElement);
+                        }, 1000);
+                    </script>
+                    </b>
+                </div>
 
 
-    <div class="nav-but-wrap">
+                <div class="nav-but-wrap">
 
-        <div class="menu-icon hover-target">
-            <span class="menu-icon__line menu-icon__line-left"></span>
-            <span class="menu-icon__line"></span>
-            <span class="menu-icon__line menu-icon__line-right"></span>
+                    <div class="menu-icon hover-target">
+                        <span class="menu-icon__line menu-icon__line-left"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line menu-icon__line-right"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--------More Menu --------------->
+        <div class="nav">
+            <div class="nav__content">
+                <div class="curent-page-name-shadow">MORE</div>
+                <ul class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="index.html" class="animsition-link" style="color: black;"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                    </li>
+
+                    <li class="nav__list-item"><a href="contact.html" class=" animsition-link" style="color: black;"><i class="fa fa-envelope" aria-hidden="true"></i>Contacts</i></a>
+
+                        <li class="nav__list-item"><a href="https://snakegamesg.netlify.app/" class=" animsition-link" style="color: black;"><i class="fa fa-gamepad" aria-hidden="true"></i>Snake Game</a>
+                        </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    </div>
-    </header>
-
-
-    <!--------More Menu --------------->
 
 
 
-    <!-- Primary Page Layout
+        <!-- Primary Page Layout
 		================================================== -->
 
 
-    <div class="shadow-title parallax-top-shadow"></div>
-    <div class="section padding-page-top padding-bottom over-hide z-bigger">
-        <div class="container z-bigger">
-            <div class="row page-title px-5 px-xl-2">
-                <h1>
+        <div class="shadow-title parallax-top-shadow"></div>
+        <div class="section padding-page-top padding-bottom over-hide z-bigger">
+            <div class="container z-bigger">
+                <div class="row page-title px-5 px-xl-2">
+
                     <div class="col-12 parallax-fade-top ">
                         <h1>Hi I'm Shaunak Guchhait.</h1>
                     </div>
-                </h1>
-                <div class="offset-1 col-11 parallax-fade-top mt-2 mt-sm-3">
-                    <p style="color:#31097c" class="typewrite" data-period="1500" data-type='[ "I&apos;m a Student", "I&apos;m a Passionate Coder", "I&apos;m a Tech Geek"]'>
-                    </p>
-                </div>
-                <img class="bitmoji" src="img/hiimage.png">
-            </div>
-            <div class="col-lg-7 padding-top" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
-                <blockquote class="blockquote">
-                    <p></p>
-                    <div class="lead-big" style="font-size:x-large; font-family:'Times New Roman', Times, serif;">
-                        <i> &nbsp; Software is a great combination of artistry and engineering.</i>
 
-                        <h5>&nbsp;&nbsp; &nbsp;— Bill Gates, Co-founder of Microsoft
-                            <h5>
-
-                    </div>
-                </blockquote>
-                <br>
-
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-------About Section
-          =======================================-->
-    <div class="section padding-bottom-big over-hide z-bigger">
-        <div class="container">
-            <div class="row px-5 px-xl-2">
-                <p>
-                    <h4><b>About Me:</b>
-                    </h4>
-                </p>
-                <div class="about" style="font-size:x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" ; line>I am <b class="hover-target">Shaunak Guchhait</b>, a student keen to know everything about technology. In this modern world people are advacing with technology at a very high rate and creating wonderful and useful things with their creative
-                    mind. Being a enthusiastic coder and tech geek, I also intend to contribute not great but small creations of my own.<br>
-                    <Br>
-                </div>
-
-                <p>
-                    <h5><b>Languages Learned:</b>
-                    </h5>
-                </p>
-                <div class="col-md-6" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.1s">
-                    <ul class="studio-list">
-                        <br>
-                        <p>
-
-                            <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">↪ Java</h5>
-
-
-                            <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">↪ HTML5</h5>
-
-                            <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">↪ CSS3</h5>
-
-                            <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">↪ JavaScript</h5>
+                    <div class="offset-1 col-11 parallax-fade-top mt-2 mt-sm-3">
+                        <p style="color:#31097c" class="typewrite" data-period="1500" data-type='[ "I&apos;m a Student", "I&apos;m a Passionate Coder", "I&apos;m a Tech Geek"]'>
                         </p>
-                    </ul>
+                    </div>
+                    <img class="bitmoji" src="img/hiimage.png">
+                </div>
+                <div class="col-lg-7 padding-top" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.2s">
+                    <blockquote class="blockquote">
+                        <p></p>
+                        <div class="lead-big" style="font-size:x-large; font-family:'Times New Roman', Times, serif;">
+                            <i> &nbsp; Software is a great combination of artistry and engineering.</i>
+
+                            <h5>&nbsp;&nbsp; &nbsp;— Bill Gates, Co-founder of Microsoft
+                                <h5>
+
+                        </div>
+                    </blockquote>
+                    <br>
+
                 </div>
 
             </div>
-            <p></p>
-            <h5><b>Work:</b>
-            </h5>
-            <div class="about" style="font-size:x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" ; line>On <a class="hover-target" href="https://github.com/Shaunak0806"><i class="fa fa-github " style="color: black;"> Github</i></a>, take a look at my interesting and amazing projects.
-            </div>
-
-
         </div>
 
 
+        <!-------About Section
+          =======================================-->
+        <div class="section padding-bottom-big over-hide z-bigger">
+            <div class="container">
+                <div class="row px-5 px-xl-2">
+                    <p>
+                        <h4><b>About Me:</b>
+                        </h4>
+                    </p>
+                    <div class="about" style="font-size:x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" ; line>I am <b class="hover-target">Shaunak Guchhait</b>, a student keen to know everything about technology. In this modern world people are advacing with technology at a very high rate and creating wonderful and useful things with their
+                        creative mind. Being a enthusiastic coder and tech geek, I also intend to contribute not great but small creations of my own.<br>
+                        <Br>
+                    </div>
 
-    </div>
+                    <p>
+                        <h5><b>Languages Learned:</b>
+                        </h5>
+                    </p>
+                    <div class="col-md-6" data-scroll-reveal="enter bottom move 30px over 0.5s after 0.1s">
+                        <ul class="studio-list">
+                            <br>
+                            <p>
+
+                                <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">↪ Java</h5>
+
+
+                                <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">↪ HTML5</h5>
+
+                                <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">↪ CSS3</h5>
+
+                                <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">↪ JavaScript</h5>
+                            </p>
+                        </ul>
+                    </div>
+
+                </div>
+                <p></p>
+                <h5><b>Work:</b>
+                </h5>
+                <div class="about" style="font-size:x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" ; line>On <a class="hover-target" href="https://github.com/Shaunak0806"><i class="fa fa-github " style="color: black;"> Github</i></a>, take a look at my interesting and amazing projects.
+                </div>
+
+
+            </div>
+
+
+
+        </div>
     </div>
 
 
@@ -264,6 +291,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="Contactpage/contact.js"></script>
 
     <!-- End Document
 ================================================== -->
