@@ -32,8 +32,6 @@ label.logo {
 }
 
 nav ul {
-    background-color: #ececec;
-    ;
     float: right;
     margin-right: 20px;
     z-index: 999;
@@ -376,6 +374,9 @@ footer {
         font-size: 12px;
         padding-left: 50px;
     }
+    nav ul {
+        background-color: #ececec;
+    }
     nav ul li a {
         font-size: 16px;
     }
@@ -396,6 +397,9 @@ footer {
     }
     nav ul li a {
         font-size: 16px;
+    }
+    nav ul {
+        background-color: #ececec;
     }
 }
 
@@ -437,5 +441,8 @@ footer {
     }
     #check:checked~ul {
         left: 0;
+    }
+    nav ul {
+        background-color: #ececec;
     }
 }
